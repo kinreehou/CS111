@@ -1,0 +1,15 @@
+Q1:
+	GNU g++
+	
+	
+	(base) Kinrees-MacBook-Pro:~ kinreehou$ g++ --version
+	Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/4.2.1
+	Apple clang version 11.0.3 (clang-1103.0.32.29)
+	Target: x86_64-apple-darwin19.3.0
+	Thread model: posix
+	InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+	
+	
+Q2:
+	g++ convert.cpp units.cpp -o convert
+	./convert
