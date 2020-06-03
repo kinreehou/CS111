@@ -13,7 +13,7 @@ class UValue{
         
     public:             
 		// Constructor             
-        UValue(double value, string units);    
+        UValue(double value, const string &units);    
         // Getters
         double get_value() const;    
         string get_units() const;
@@ -22,9 +22,13 @@ class UValue{
 
 // A class keeping track of all conversions
 class UnitConverter{
+    // A struct that contains info of units before and after conversion, and the multiplier
     struct Conversion{
+        // the unit before conversion
         string from_units;
+        // the multiplier 
         double multiplier;
+        // the unit after conversion
         string to_units;
     };
     
